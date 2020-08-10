@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"
+       default-init-method="init" default-destroy-method="destroy">
+
+    <bean scope="prototype" id="iphone" class="com.thiethaa.config_xmlbased.Iphone"
+          p:serialNo="89998"
+          p:type="Iphone8"
+    >
+<!--setter style-->
+        <!--<property name="serialNo" value="5556657"/>-->
+        <!--<property name="type" value="Iphone7"/>-->
+
+    </bean>
+
+    <bean id="samsung" class="com.thiethaa.config_xmlbased.Samsung"
+
+          c:serialNo="00089"
+          c:type="Samsung Note 3+"
+    >
+<!--constructor style-->
+        <!--<constructor-arg index="0" value="1234342"/>-->
+        <!--<constructor-arg index="1" value="S10+"/>-->
+
+
+    </bean>
+
+    <context:component-scan base-package="com.thiethaa.config_annotationbased"></context:component-scan>
+
+</beans>
