@@ -2,7 +2,6 @@ package com.thiethaa;
 
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertTrue;
 
 import com.thiethaa.config_xmlbased.Iphone;
 import com.thiethaa.config_xmlbased.MobilePhone;
@@ -11,15 +10,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-
+public class AppTest {
 
     @Test
     public void testObjPrototype(){
