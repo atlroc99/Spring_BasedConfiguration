@@ -7,7 +7,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"
        default-init-method="init" default-destroy-method="destroy">
 
-    <bean scope="prototype" id="iphone" class="com.thiethaa.config_xmlbased.Iphone"
+    <bean id="iphone" class="com.thiethaa.config_xmlbased.Iphone" scope="prototype"
           p:serialNo="89998"
           p:type="Iphone8"
     >
@@ -16,28 +16,13 @@
         <!--<property name="type" value="Iphone7"/>-->
     </bean>
 
-    <bean id="samsung" class="com.thiethaa.config_xmlbased.Samsung"
+    <bean id="samsung" class="com.thiethaa.config_xmlbased.Samsung" scope="singleton"
           c:serialNo="00089"
           c:type="Samsung Note 3+"
     >
         <!--constructor style-->
         <!--<constructor-arg index="0" value="1234342"/>-->
         <!--<constructor-arg index="1" value="S10+"/>-->
-    </bean>
-    <!--factorymethod without argument-->
-    <bean id="hp" class="com.thiethaa.config_xmlbased.MobilePhoneFactory" factory-method="getHp"></bean>
-
-    <!--factorymethod with argument-->
-    <bean id="phone" class="com.thiethaa.config_xmlbased.MobilePhoneFactory"
-          factory-method="getPhone">
-        <constructor-arg index="0" value="iphone"/>
-    </bean>
-
-    <!--instance Factory Method-->
-    <bean id="factorybean" class="com.thiethaa.config_xmlbased.MobilePhoneInstanceFactory"/>
-
-    <bean id="phonefactory" factory-bean="factorybean" factory-method="getMobilePhone">
-        <constructor-arg index="0" value="samsung"></constructor-arg>
     </bean>
 
     <!--to enable annotation based configuration for all classess presennce in  com.thiethaa.config_annotationbased-->

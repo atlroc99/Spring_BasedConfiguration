@@ -17,16 +17,6 @@ public class App {
         //System.out.println(mobilePhone1);
         mobilePhone1.takePic();
 
-        System.out.println("\nFactory-Method with argument style");
-        MobilePhone mobilePhone2 = (Iphone)context.getBean("phone");
-        mobilePhone2.takePic();
-        System.out.println("\nFactory-Method without argument style");
-        MobilePhone mobilePhone4 = (Samsung)context.getBean("hp");
-        mobilePhone4.takePic();
-
-        System.out.println("\nInstance-Factory-Method style");
-        MobilePhone mobilePhone3 = (Samsung)context.getBean("phonefactory");
-        mobilePhone3.takePic();
 
     }
 }
