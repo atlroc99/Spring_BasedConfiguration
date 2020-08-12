@@ -24,8 +24,10 @@
         <!--<constructor-arg index="0" value="1234342"/>-->
         <!--<constructor-arg index="1" value="S10+"/>-->
     </bean>
+    <!--factorymethod without argument-->
+    <bean id="hp" class="com.thiethaa.config_xmlbased.MobilePhoneFactory" factory-method="getHp"></bean>
 
-    <!--factorymethod-->
+    <!--factorymethod with argument-->
     <bean id="phone" class="com.thiethaa.config_xmlbased.MobilePhoneFactory"
           factory-method="getPhone">
         <constructor-arg index="0" value="iphone"/>
