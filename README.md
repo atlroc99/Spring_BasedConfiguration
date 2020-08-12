@@ -31,3 +31,6 @@ Summary:
     - Annotation Based Configuration – By using @Service or @Component annotations. Scope details can be provided with @Scope annotation.
     - XML Based Configuration – By creating Spring Configuration XML file to configure the beans. 
     - Java Based Configuration – Starting from Spring 3.0, we can configure Spring beans using java programs. Some important annotations used for java based              configuration are @Configuration, @ComponentScan and @Bean.
+6.  there is 2 ways of Spring IoC to inject the dependency to the application object:
+    - Constructor based DI
+    - Setter method based DI
