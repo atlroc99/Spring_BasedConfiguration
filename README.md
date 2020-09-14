@@ -8,7 +8,7 @@ Summary:
 
 3.  there are 2 types of Spring IOc:
     - Bean Factory
-    - ApplicationContext interfaces is extend Bean factory so by default ApplicationContext has all the fungtionality of the BeanFactory plus some other extra             advance Fearures.
+    - ApplicationContext interfaces is extend Bean factory so by default ApplicationContext has all the fungtionality of the BeanFactory plus some other extra             advance Features.
     
     Some of the useful ApplicationContext implementations that we use are;
 
